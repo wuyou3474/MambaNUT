@@ -1,5 +1,5 @@
 # MambaNUT
-The official implementation for the **Arxiv 2024** paper [ [**MambaNUT: Nighttime UAV Tracking via Mamba-based Adaptive Curriculum Learning**]([2412.00626](https://arxiv.org/pdf/2412.00626)) ]
+The official implementation for the **Arxiv 2024** paper [ [**MambaNUT: Nighttime UAV Tracking via Mamba-based Adaptive Curriculum Learning**](https://arxiv.org/pdf/2412.00626)]
 
 [Models & Raw Results]( https://pan.baidu.com/s/1k7ns7x7fr5r_DXCI9xnVpA?pwd=tj3y) BaiduNetDisk
 
