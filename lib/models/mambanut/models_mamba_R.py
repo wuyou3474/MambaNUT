@@ -442,9 +442,9 @@ def mambar_small_patch16_224(pretrained=False, **kwargs):
         fused_add_norm=True, num_cls_tokens=0, cls_reduce=0, **kwargs)
     model.default_cfg = _cfg()
     if pretrained:
-        checkpoint = torch.load('../../pretrained_models/mambar_small_patch16_224.pth', map_location="cpu")
+        checkpoint = torch.load('/home/wy/MambaNUT-master/pretrained_models/mambar_small_patch16_224.pth', map_location="cpu")
         missing_keys, unexpected_keys = model.load_state_dict(checkpoint["model"], strict=False)
-        print('Load pretrained model from: ' + '../../pretrained_models/mambar_small_patch16_224.pth')
+        print('Load pretrained model from: ' + '/home/wy/MambaNUT-master/pretrained_models/mambar_small_patch16_224.pth')
     return model
 
 @register_model
