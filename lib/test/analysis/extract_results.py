@@ -84,7 +84,7 @@ def calc_seq_err_robust(pred_bb, anno_bb, dataset, target_visible=None):
     err_overlap = calc_iou_overlap(pred_bb, anno_bb)
 
     # handle invalid anno cases
-    if dataset in ['uav', 'nat2021', 'nat2024', 'uavdark135']:
+    if dataset in ['uav']:
         err_center[~valid] = -1.0
     else:
         err_center[~valid] = float("Inf")
@@ -133,10 +133,10 @@ def extract_results(trackers, dataset, report_name, skip_missing_seq=False, plot
         target_visible = torch.tensor(seq.target_visible, dtype=torch.uint8) if seq.target_visible is not None else None
         for trk_id, trk in enumerate(trackers):
             # Load results
-            base_results_path = '{}/{}/{}'.format(trk.results_dir, report_name, seq.name)
+            base_results_path = '{}/{}/{}'.format(trk.results_dir, seq.name)
             results_path = '{}.txt'.format(base_results_path)
 
-            time_file = os.path.join(trk.results_dir, report_name, '%s_time.txt' % seq.name)
+            time_file = os.path.join(trk.results_dir, '%s_time.txt' % seq.name)
             if os.path.isfile(time_file):
                 times = np.loadtxt(time_file)
                 times = times[times > 0]

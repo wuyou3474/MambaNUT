@@ -18,7 +18,7 @@ conda create -n MambaNUT python=3.10
 conda activate MambaNUT
 ```
 
-Install the required packages (Please refer to [Vim](https://github.com/hustvl/Vim) first to install the Mamba environment):
+Install the required packages (Please refer to [Vim](https://github.com/hustvl/Vim) to install the Mamba environment):
 ```
 pip install -r requirement.txt
 ```
@@ -59,7 +59,7 @@ Put the tracking datasets in ./data. It should look like:
             |-- TEST         
    ```
 
-We provide download links for the nighttime training datasets used in our work: [BDD100K_Night](https://pan.baidu.com/s/1cmuWxLIR4HLUPpEfyMTgJw?pwd=13ku), [ExDark](https://pan.baidu.com/s/17K8OTUhAbt78LtX_VgyWMQ?pwd=7w6t), and [Shift_Night](https://pan.baidu.com/s/1efiPT3FQ9JXqCNuoNA9S2w?pwd=kmtw).
+We provide download links for the nighttime training datasets used in our work: [BDD100K_Night](https://pan.baidu.com/s/1cmuWxLIR4HLUPpEfyMTgJw?pwd=13ku), [ExDark](https://pan.baidu.com/s/17K8OTUhAbt78LtX_VgyWMQ?pwd=7w6t), and [Shift_Night](https://pan.baidu.com/s/1U-znWCGNglMYyC1k3y-SmQ?pwd=4y7x ).
 
 ### Path Setting
 
