@@ -367,6 +367,7 @@ def print_results(trackers, dataset, report_name, merge_results=False,
         norm_prec_curve, norm_prec_score = get_prec_curve(ave_success_rate_plot_center_norm, valid_sequence)
         scores['Norm Precision'] = norm_prec_score
 
+    scores['FPS'] = eval_data['avg_speed']
     # Print
     tracker_disp_names = [get_tracker_display_name(trk) for trk in tracker_names]
     report_text = generate_formatted_report(tracker_disp_names, scores, table_name=report_name)
