@@ -97,10 +97,11 @@ class MambaNUTActor(BaseActor):
         l1_loss = self.objective['l1'](pred_boxes_vec, gt_boxes_vec)  # (BN,4) (BN,4)
         # compute location loss
         if self.net.training:
-            # adw_loss
+            # =====================Loss Scheduler==========================
             adw_loss = self.compute_adw_loss(iou, pred_dict['training_datasets'])
         else:
             adw_loss = 0
+            # =====================Loss Scheduler==========================
 
         if 'score_map' in pred_dict:
             location_loss = self.objective['focal'](pred_dict['score_map'], gt_gaussian_maps)
