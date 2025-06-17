@@ -71,7 +71,7 @@ class LTRTrainer(BaseTrainer):
 
         self._init_timing()
 
-        # ===============================================
+        #  =====================Sampling Scheduler==========================
         night_dataset_indices = [
             i for i, d in enumerate(loader.dataset.datasets)
             if d.name.lower() in (['exdark', 'bdd100k_night', 'shift_night'])
@@ -82,7 +82,7 @@ class LTRTrainer(BaseTrainer):
         p_total = sum(loader.dataset.p_datasets)
         loader.dataset.p_datasets = [x / p_total for x in loader.dataset.p_datasets]
         # print('loader.dataset.p_datasets:', loader.dataset.p_datasets)
-        # ===============================================
+        #  =====================Sampling Scheduler==========================
         for i, data in enumerate(loader, 1):
             self.data_read_done_time = time.time()
             # get inputs
