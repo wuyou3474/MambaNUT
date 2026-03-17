@@ -110,11 +110,12 @@ python tracking/profile_model.py --script mambanut --config mambar_small_patch16
 ## Citation
 If our work is useful for your research, please consider citing:
 ```Bibtex
-@article{wu2024mambanut,
+@inproceedings{wu2025mambanut,
   title={MambaNUT: Nighttime UAV Tracking via Mamba-based Adaptive Curriculum Learning},
   author={Wu, You and Yang, Xiangyang and Wang, Xucheng and Ye, Hengzhou and Zeng, Dan and Li, Shuiwang},
-  journal={arXiv preprint arXiv:2412.00626},
-  year={2024}
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={18864--18871},
+  year={2025}
 }
 ```
 
